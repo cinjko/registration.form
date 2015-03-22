@@ -8,7 +8,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title><?php echo $lang['TITLE']?></title>
+	<title><?php echo $lang['TITLE_REGISTRATION']?></title>
 	<script type="text/javascript" src="./js/jquery-2.1.3.js"></script>
 	<script type="text/javascript" src="./js/validation.js"></script>
 	<link rel="stylesheet" href="css/error.css"/>
@@ -62,7 +62,7 @@
 					<input type="file" name="userfile"/><br />
 			</div><br/>
 
-			<input type="button" name="submit" onclick="validation(); return false;" value="<?php echo $lang['SEND']?>"/>
+			<input type="button" name="submit" onclick="validation(); return false;" value="<?php echo $lang['SING_UP']?>"/>
 		</form>
 	</div>
 </body>
