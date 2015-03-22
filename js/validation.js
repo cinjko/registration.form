@@ -1,6 +1,13 @@
 /**
  * Created by cinjko on 11.02.2015.
  */
+jQuery(function(){
+
+
+});
+
+
+/*
 function validation(){
 
     if (document.getElementById("first_name").value == ""){
@@ -11,4 +18,4 @@ function validation(){
         jQuery("input.first_name").removeClass('error');
         return true;
     }
-}
+}*/
