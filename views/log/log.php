@@ -37,9 +37,14 @@
             </div><br/>
 
             <div id="button">
-                <button type="button" class="green" id="login_button"><?php echo($array_language["SING_IN"])?></button>
+                <button type="button" class="green" id="login_button"><?php echo($array_language['SING_IN'])?></button>
             </div>
+
         </form>
+
+        <p class="reffer">впівапівап
+            <a class="reffer_to_registr_filesrc" href="controllers/registration.php">sdfsfd<?php echo($array_language['LINK_REGISTRATION']);?></a>
+        </p>
     </div>
 </body>
 </html>
