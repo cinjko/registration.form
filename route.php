@@ -7,7 +7,8 @@ class Rout{
         $parse_url = parse_url($url);
         $path = $parse_url['path'];
         $path = explode("/", $path);
-        $controller_name = $path[3];
+        $controller_name = $path[2];
+//        print_r($controller_name);die;
 
         if($controller_name == ""){
             $controller_name = "main";

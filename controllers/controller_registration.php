@@ -1,7 +1,7 @@
 <?
 //include("models/registration.php");
 
-class Registration
+class Controller_registration
 {
 	function __construct()
 	{

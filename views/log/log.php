@@ -43,7 +43,7 @@
         </form>
 
         <p class="reffer">впівапівап
-            <a class="reffer_to_registr_filesrc" href="controllers/registration.php">sdfsfd<?php echo($array_language['LINK_REGISTRATION']);?></a>
+            <a class="reffer_to_registr_filesrc" href="registration">sdfsfd<?php echo($array_language['LINK_REGISTRATION']);?></a>
         </p>
     </div>
 </body>
