@@ -25,7 +25,6 @@ class Controller_registration
 		$selectProfession = RegistrationModel::buildSelect($getProgramLanguich, 'profession', 1);
 
 		include("views/registration/registration.php");
-
 		$action = $this->saveregistration();
 }
 
