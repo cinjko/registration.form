@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.wrapper {
+    margin: auto;
+    width: 300px;
+    height: auto;
+    background-color: beige;
+    padding: 20px;
+}
+
+.change_lang {
+    padding: 0;
+    margin: 0;
+}
+
+.registration{
+    width: 300px;
+    margin: 0;
+
+}
+
+.info {
+    width: 300px;
+}
+
+#first_name{
+    border: 1px solid silver;
+    margin-bottom: 10px;
+}
+
+#last_name{
+    border: 1px solid silver;
+    margin-bottom: 10px;
+}
+
+#email{
+    border: 1px solid silver;
+    margin-bottom: 10px;
+}
+
+#password{
+    border: 1px solid silver;
+    margin-bottom: 10px;
+}
+
+#login{
+    border: 1px solid silver;
+    margin-bottom: 10px;
+}

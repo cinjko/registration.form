@@ -11,7 +11,7 @@
 	<title><?php echo $lang['TITLE_REGISTRATION']?></title>
 	<script type="text/javascript" src="./js/jquery-2.1.3.js"></script>
 	<script type="text/javascript" src="./js/validation.js"></script>
-	<link rel="stylesheet" href="css/error.css"/>
+	<link rel="stylesheet" href="css/registration.css"/>
 </head>
 <body>
 	<div class="wrapper">

@@ -10,14 +10,16 @@ class Rout{
         $controller_name = $path[2];
 //        print_r($controller_name);die;
 
-        if($controller_name == ""){
+        if ($controller_name == "index.php"){
             $controller_name = "main";
+        } else {
+            $controller_name;
         }
 
         $controller_name ="Controller_".$controller_name;
         $controller_file = strtolower($controller_name).'.php';
         $controller_path = "controllers/".$controller_file;
-//        print_r($controller_path);die;
+        print_r($controller_path);
 
         if(file_exists($controller_path)){
             include_once $controller_path;

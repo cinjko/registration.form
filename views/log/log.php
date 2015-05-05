@@ -16,7 +16,7 @@
     <title><?php echo $lang['TITLE_LOG']?></title>
     <script type="text/javascript" src="./js/jquery-2.1.3.js"></script>
     <script type="text/javascript" src="./js/validation.js"></script>
-    <link rel="stylesheet" href="css/error.css"/>
+    <link rel="stylesheet" href="./css/log.css"/>
 </head>
 <body>
     <div class="wrapper" id="wrapper">
@@ -37,13 +37,13 @@
             </div><br/>
 
             <div id="button">
-                <button type="button" class="green" id="login_button"><?php echo($array_language['SING_IN'])?></button>
+                <input type="button" class="green" id="login_button" value="<?php echo($lang['SING_IN'])?>">
             </div>
 
         </form>
 
-        <p class="reffer">впівапівап
-            <a class="reffer_to_registr_filesrc" href="registration">sdfsfd<?php echo($array_language['LINK_REGISTRATION']);?></a>
+        <p class="reffer">
+            <a class="linkRegistrForm" href="registration.php"><?php echo($lang['LINK_REGISTRATION']);?></a>
         </p>
     </div>
 </body>
