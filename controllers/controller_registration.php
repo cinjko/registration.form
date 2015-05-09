@@ -5,12 +5,7 @@ class Controller_registration
 {
 	function __construct()
 	{
-
-	}
-
-	function registration()
-	{
-		include("models/registration.php");
+		include_once("/models/language.php");
 		$userLanguage = $_GET['id']; // отримуємо ідентифікатор мови
 
 		if (empty($userLanguage)){
@@ -18,14 +13,19 @@ class Controller_registration
 		}
 
 		$lang = Language::getLang($userLanguage);
-		$getCountry = RegistrationModel::getCountry($userLanguage);
+		include_once("/views/registration/registration.php");die;
 		$selectCountry = RegistrationModel::buildSelect($getCountry, 'country', 0);
 
-		$getProgramLanguich = RegistrationModel::getProgramLanguich();
-		$selectProfession = RegistrationModel::buildSelect($getProgramLanguich, 'profession', 1);
+		$getProgramLanguage = RegistrationModel::getProgramLanguich();
+		$selectProfession = RegistrationModel::buildSelect($getProgramLanguage, 'profession', 1);
 
-		include("views/registration/registration.php");
-		$action = $this->saveregistration();
+		$getCountry = RegistrationModel::getCountry($userLanguage);
+	}
+
+	function registration()
+	{
+
+//		$action = $this->saveregistration();
 }
 
 	function saveregistration()
@@ -36,4 +36,3 @@ class Controller_registration
 
 
 }
-?>

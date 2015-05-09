@@ -15,7 +15,7 @@ class Language {
 			}
 
 			$path = $_SERVER['DOCUMENT_ROOT'];
-			$langFile = $path.'/language/'.$userLanguage.'.ini';
+			$langFile = $path.'/registration.form/language/'.$userLanguage.'.ini';
 			if(!file_exists($langFile)){
 				echo "Не можливо загрузити мову!";
 //				 exit;

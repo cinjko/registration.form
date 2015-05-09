@@ -16,9 +16,9 @@
 <body>
 	<div class="wrapper">
 		<p class="change_lang">
-			<a href="index.php?id=en">Eng</a>
-			<a href="index.php?id=uk">Укр</a>
-			<a href="index.php?id=ru">Рос</a>
+			<a href="registration.php?id=en">Eng</a>
+			<a href="registration.php?id=uk">Укр</a>
+			<a href="registration.php?id=ru">Рос</a>
 		</p><br/>
 		<form action="<?php $action;?>" method="post" class="registration" name="registration" enctype="multipart/form-data">
 

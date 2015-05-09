@@ -10,7 +10,7 @@ class Controller_main
 {
     function __construct()
     {
-        include("/models/language.php");
+        include_once("/models/language.php");
 
         $userLanguage = $_GET['id']; // отримуємо ідентифікатор мови
 
@@ -19,6 +19,6 @@ class Controller_main
         }
         $lang = Language::getLang($userLanguage);
 
-        include("/views/log/log.php");
+        include_once("/views/log/log.php");
     }
 }
