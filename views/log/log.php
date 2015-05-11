@@ -38,13 +38,11 @@
 
             <div id="button">
                 <input type="button" class="green" id="login_button" value="<?php echo($lang['SING_IN'])?>">
+                <a class="linkRegistrForm" href="registration.php"><?php echo($lang['LINK_REGISTRATION']);?></a>
             </div>
 
         </form>
 
-        <p class="reffer">
-            <a class="linkRegistrForm" href="registration.php"><?php echo($lang['LINK_REGISTRATION']);?></a>
-        </p>
     </div>
 </body>
 </html>

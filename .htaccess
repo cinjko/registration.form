@@ -1,7 +1,9 @@
 RewriteEngine On
+Options +FollowSymlinks
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule .* index.php [L]
+#RewriteRule ^registration/$ registration.php [QSL,L]
 
 AddType application/x-httpd-php .htm .html
 AddHandler x-httpd-php5 .htm .html

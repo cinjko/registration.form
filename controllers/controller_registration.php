@@ -1,5 +1,5 @@
 <?
-//include("models/registration.php");
+include_once("/models/registration.php");
 
 class Controller_registration
 {
@@ -13,13 +13,14 @@ class Controller_registration
 		}
 
 		$lang = Language::getLang($userLanguage);
-		include_once("/views/registration/registration.php");die;
+
+		$getCountry = RegistrationModel::getCountry($userLanguage);
 		$selectCountry = RegistrationModel::buildSelect($getCountry, 'country', 0);
 
 		$getProgramLanguage = RegistrationModel::getProgramLanguich();
 		$selectProfession = RegistrationModel::buildSelect($getProgramLanguage, 'profession', 1);
 
-		$getCountry = RegistrationModel::getCountry($userLanguage);
+		include_once("/views/registration/registration.php");
 	}
 
 	function registration()
